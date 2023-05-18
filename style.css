@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  /* outline: red 1px solid; */
+}
+.scene {
+  height: 100vh;
+  width: 100%;
+  perspective: 1000px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.cube {
+  position: relative;
+  transform-style: preserve-3d;
+}
+.face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  height: 200px;
+  width: 200px;
+  display: grid;
+  place-items: center;
+}
+.front {
+  transform: rotateY(0deg) translateZ(100px);
+  background-color: red;
+}
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+  background-color: blue;
+}
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+  background-color: green;
+}
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+  background-color: purple;
+}
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+  background-color: yellow;
+}
+.buttom {
+  transform: rotateX(-90deg) translateZ(100px);
+  background-color: coral;
+}
