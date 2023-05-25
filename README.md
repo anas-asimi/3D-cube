@@ -1,2 +1,2 @@
 # 3D-cube
-a rotatable 3d cube
+an interactive 3d cube using CSS and Javascript with OOP
